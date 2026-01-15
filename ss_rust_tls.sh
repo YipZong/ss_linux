@@ -290,13 +290,13 @@ install_v2(){
             wget $v2_url
         fi
         tar xf $v2_file
-        mv v2ray-plugin_linux_amd64 /usr/local/bin/v2ray-plugin
+        mv v2ray-plugin_linux_arm64 /usr/local/bin/v2ray-plugin
 		colorEcho $BLUE " v2ray_plugin安装成功!"
         if [ ! -f /usr/local/bin/v2ray-plugin ];then
             echo "\033[1;31mFailed to install v2ray-plugin.\033[0m"
             exit 1
         fi
-		rm -rf v2ray-plugin-linux-amd64*
+		rm -rf v2ray-plugin-linux-arm64*
     fi
 }
 
@@ -307,7 +307,7 @@ update_v2(){
         wget $v2_url
     
         tar xf $v2_file
-        mv v2ray-plugin_linux_amd64 /usr/local/bin/v2ray-plugin
+        mv v2ray-plugin_linux_arm64 /usr/local/bin/v2ray-plugin
 		colorEcho $BLUE " v2ray_plugin安装成功!"
         if [ ! -f /usr/local/bin/v2ray-plugin ];then
             echo "\033[1;31mFailed to install v2ray-plugin.\033[0m"
