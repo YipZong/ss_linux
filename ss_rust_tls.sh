@@ -255,7 +255,7 @@ normalizeVersion() {
 
 installNewVer() {
     new_ver=$1
-    if ! wget "${V6_PROXY}https://github.com/shadowsocks/shadowsocks-rust/releases/download/v${new_ver}/shadowsocks-v${new_ver}.x86_64-unknown-linux-gnu.tar.xz" -O ${NAME}.tar.xz; then
+    if ! wget "${V6_PROXY}https://github.com/shadowsocks/shadowsocks-rust/releases/download/v${new_ver}/shadowsocks-v${new_ver}.aarch64-unknown-linux-gnu.tar.xz" -O ${NAME}.tar.xz; then
        colorEcho $RED " 下载安装文件失败！"
         exit 1
     fi
